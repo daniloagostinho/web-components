@@ -1,0 +1,32 @@
+{
+  "name": "copyable-env-var",
+  "version": "0.1.0",
+  "description": "A tiny Web Component for displaying and copying environment variables safely.",
+  "type": "module",
+  "main": "src/copyable-env-var.js",
+  "module": "src/copyable-env-var.js",
+  "exports": {
+    ".": "./src/copyable-env-var.js"
+  },
+  "files": [
+    "src",
+    "demo",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "npx @web/dev-server --node-resolve --open /demo/index.html",
+    "check": "node --check src/copyable-env-var.js"
+  },
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "environment",
+    "clipboard",
+    "developer-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

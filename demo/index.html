@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>copyable-env-var demo</title>
+    <script type="module" src="../src/copyable-env-var.js"></script>
+    <style>
+      body {
+        color: #202124;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 32px;
+      }
+
+      main {
+        max-width: 720px;
+      }
+
+      h1 {
+        font-size: 28px;
+        letter-spacing: 0;
+        margin: 0 0 12px;
+      }
+
+      p {
+        margin: 0 0 24px;
+      }
+
+      .stack {
+        display: grid;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>copyable-env-var</h1>
+      <p>Um Web Component pequeno para documentacoes, dashboards internos e READMEs vivos.</p>
+
+      <div class="stack">
+        <copyable-env-var name="OPENAI_API_KEY" value="sk-proj-example-1234567890"></copyable-env-var>
+        <copyable-env-var name="DATABASE_URL" value="postgres://user:pass@localhost:5432/app"></copyable-env-var>
+        <copyable-env-var name="PUBLIC_APP_URL" value="https://app.example.com" masked></copyable-env-var>
+      </div>
+    </main>
+  </body>
+</html>
