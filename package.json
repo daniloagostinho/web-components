@@ -1,6 +1,6 @@
 {
   "name": "copyable-env-var",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny Web Component for displaying and copying environment variables safely.",
   "type": "module",
   "main": "src/copyable-env-var.js",
@@ -19,13 +19,24 @@
   },
   "keywords": [
     "web-components",
+    "web-component",
     "custom-elements",
+    "custom-element",
     "environment",
+    "environment-variables",
     "clipboard",
     "developer-tools"
   ],
-  "author": "",
+  "author": "Danilo Agostinho",
   "license": "MIT",
+  "homepage": "https://github.com/daniloagostinho/web-components#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniloagostinho/web-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daniloagostinho/web-components/issues"
+  },
   "devDependencies": {
     "@web/dev-server": "^0.4.6"
   }
