@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "README.md",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/copyable-env-var.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A Web Component for showing an environment variable with masked display, show/hide control, and copy action.",
+          "name": "CopyableEnvVar",
+          "tagName": "copyable-env-var",
+          "customElement": true,
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "attributes": [
+            {
+              "name": "name",
+              "description": "The environment variable name.",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "value",
+              "description": "The value copied to the clipboard.",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "masked",
+              "description": "Masks the displayed value when present.",
+              "type": {
+                "text": "boolean"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "CopyableEnvVar",
+          "declaration": {
+            "name": "CopyableEnvVar",
+            "module": "src/copyable-env-var.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "copyable-env-var",
+          "declaration": {
+            "name": "CopyableEnvVar",
+            "module": "src/copyable-env-var.js"
+          }
+        }
+      ]
+    }
+  ]
+}
